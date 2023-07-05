@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>landing page</title>
+<style type="text/css">
+    *{padding: 0; margin:0; box-sizing: border-box;}
+    header{
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('img/martin-jernberg-nE2gf1sciti-unsplash.jpg');
+        background-size: cover;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        font-size: 2em;
+        Letter-spacing: 1px;
+    }
+    .menu a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        font-size:20px;
+        position: relative;
+    }
+    .menu a:before{
+        content: '';
+        position: absolute;
+        top:0;
+        Left:0;
+        width: 0%;
+        height: 100%; 
+        border-bottom: 2px solid lightseagreen;
+        transition: 0.4s linear;
+    }
+    .menu a:hover:before{
+        width: 90%;
+    }
+    .Register a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        font-size:20px;
+        background: whitesmoke;
+        border-radius: 8px;
+        transition: 0.4s;
+    }
+    .Register a:hover{
+        background: transparent;
+        border:1px solid lightseagreen;
+    }
+    .h-txt{
+        max-width:650px;
+        position: absolute;
+        top:50%;
+        Left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+    }
+    .h-txt span{
+        Letter-spacing: 5px;
+    }
+    .h-txt h1{
+        font-size: 3.5em
+    }
+    .h-txt a{
+        text-decoration: none;
+        background-color:black;
+        color:white;
+        padding: 10px 20px;
+        letter-spacing: 4px;
+        transition: 0.4s;
+    }
+    .h-txt a:hover{
+        background: transparent;
+        border:1px solid lightseagreen;
+    }
+
+    
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">
+             VOYAGER
+        </div>
+        <div class="menu">
+             <a href="#">Home</a>
+             <a href="#">tourism spots</a>
+             <a href="#">Best offers</a>
+             <a href="#">packages</a>
+             <a href="#">contact</a>
+        </div>
+        <div class="Register">
+            <a href="#">Register</a>
+        </div>
+    </nav>
+    <section class="h-txt">
+        <span>Enroute-Explore-Enjoy</span>
+        <h1>International Travel Agency</h1>
+
+        <br>
+        <a href="#">Book your Trip</a>
+    </section>
+  </header>   
+    
+</body>
+</html>
